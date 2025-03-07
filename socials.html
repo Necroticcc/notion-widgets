@@ -66,6 +66,10 @@
       background-color: #5faaa5;
     }
 
+    .spotify:hover{
+      background-color: #5faaa5;
+    }
+
     .social {
       position: relative;
       margin: 10px;
@@ -119,6 +123,11 @@
       </div>
       <!-- End roblox Icon -->
 
+        <!-- End spotify Icon -->
+      <div id="spotify" onclick="navigate(this.id)" class="fill spotify">
+        <span class="icon"><i class="fa-brands fa-spotify"></i></span>
+      </div>
+      <!-- End spotify Icon -->
 
 
     <script>
@@ -140,6 +149,9 @@
         }
         else if (id === "roblox") {
           window.open("https://www.roblox.com/users/2818254377/profile", '_blank').focus(); //Add the url to your tiktok account
+        }
+        else if (id === "spotify") {
+          window.open("https://open.spotify.com/user/31wfqfjbeu3qcc76hz5nbwunwqwe?si=a87b4c58ada144f9", '_blank').focus(); //Add the url to your tiktok account
         }
       }
 
