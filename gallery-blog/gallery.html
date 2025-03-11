@@ -68,7 +68,7 @@
 
     .gallery-grid img {
       width: 100%;
-      border: 5px solid #fff;
+      border: none;
     }
 
     .gallery-grid div {
@@ -140,7 +140,7 @@
 
     .modal img {
       width: 100%;
-      border: 5px solid #fff;
+      border: none;
     }
 
     .modal-overlay {
@@ -254,7 +254,6 @@
       render() {
         return /*#__PURE__*/(
           React.createElement("div", { className: "gallery-container" }, /*#__PURE__*/
-            React.createElement("h1", null, "Gallery"), /*#__PURE__*/
             React.createElement("div", { className: "gallery-grid" },
               imgUrls.map(this.renderImageContent)), /*#__PURE__*/
 
@@ -266,6 +265,7 @@
               hasNext: this.state.currentIndex + 1 < imgUrls.length,
               src: imgUrls[this.state.currentIndex]
             })));
+        }
 
 
 
